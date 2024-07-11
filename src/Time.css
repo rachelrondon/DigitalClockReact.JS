@@ -1,0 +1,14 @@
+.container {
+  background-color: #ffff;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 8rem;
+  color: #282c34;
+  font-family: "Helvetica", "Arial", sans-serif;
+};
+
+.container p {
+  padding: 0.5rem;
+};
