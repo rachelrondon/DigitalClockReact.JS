@@ -1,14 +1,18 @@
-.container {
-  background-color: #ffff;
-  border-radius: 0.5rem;
+.digital-clock {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 8rem;
-  color: #282c34;
-  font-family: "Helvetica", "Arial", sans-serif;
-};
+  flex-direction: column;
+}
 
-.container p {
-  padding: 0.5rem;
-};
+.time {
+  color: #ffffff;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 6rem;
+  margin-bottom: 0;
+}
+
+.date {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}

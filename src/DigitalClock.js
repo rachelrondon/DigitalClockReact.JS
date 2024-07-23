@@ -1,12 +1,9 @@
 import Time from './Time.js';
 
-const DigitalClock = () => {
-
-    return (
-      <div>
-        <Time />
-      </div>
-    );
+function DigitalClock() {
+  return (
+      <Time />
+  );
 }
 
 export default DigitalClock;
