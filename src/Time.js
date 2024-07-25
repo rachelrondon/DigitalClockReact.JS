@@ -2,27 +2,18 @@ import React, { useState } from 'react';
 import "./Time.css";
 
 const Time = () => {
-  const day = new Date();
-
-  const [time, setTime] = useState("");
-  const [date, setDate] = useState(day.toLocaleDateString([], {
-    weekday: "long", year: "numeric", month: "long", day: "numeric"
-  }));
+    const [time, setTime] = useState("");
 
     setInterval(() => {
-      const day = new Date();
-      const exactTime = day.toLocaleTimeString();
-      if (time !== exactTime) {
+        const day = new Date();
         setTime(day.toLocaleTimeString([], {
           hour: "2-digit", minute: "2-digit", second: "2-digit"
         }))
-      }
-    },1000);
+    }, 1000);
 
     return (
       <div className="digital-clock">
-        <p className="time">{time}</p>
-        <p className="date">{date}</p>
+        <h1 className="time">{time}</h1>
       </div>
     )
 };
